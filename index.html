@@ -149,6 +149,39 @@
                     <textarea placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Send Us a Message</button>
                 </form>
+                <script>
+  const form = document.getElementById('myForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const name = document.getElementById('text').value;
+    const email = document.getElementById('email').value;
+
+    if (name === '') {
+      alert('Name must be filled out');
+      return false;
+    }
+
+    if (email === '') {
+      alert('Email must be filled out');
+      return false;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Invalid email format');
+        return false;
+    }
+
+    // Form is valid, process data (e.g., send to server)
+    console.log('Form data:', { name, email });
+    alert('Form submitted successfully!');
+  });
+
+    function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+</script>
             </div>
         </div>
     </section>
