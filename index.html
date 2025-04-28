@@ -101,7 +101,7 @@
             <p>Welcome to [Podcast Name], where we [describe what your podcast is about]. Each episode we [briefly describe format or regular features].</p>
             <p>Our mission is to [state your podcast's mission or purpose]. Whether you're [target audience], you'll find [what value they get].</p>
         </div>
-        <!-- Host-->
+    <!--    -- Host--
         <div class="container">
             <div class="about-image">
                 <img src="IMG/Picture.JPG" alt="Podcast Host">
@@ -111,7 +111,7 @@
                 <p>[Host name] is [host's background and qualifications]. [He/She/They] brings [unique perspective or experience] to each episode.</p>
             </div>
         </div>
-        <!-- co-Host-->
+        -- co-Host --
         <div class="container">
             <div class="coabout-content">
                 <h3>About The Co-Host</h3>
@@ -120,51 +120,52 @@
                 <div class="about-image">
                 <img src="IMG/Picture.JPG" alt="Podcast Host">
             </div>
-        </div>
+        </div> -->
     </section>
 
-    <section id="cta" class="cta">
-        <div class="container">
-            <h2>Never Miss An Episode</h2>
-            <p>Subscribe to our podcast on your favorite platform</p>
-            <div class="platforms">
-                <a href="#" class="platform-btn"><i class="fab fa-spotify"></i> Spotify</a>
-                <a href="#" class="platform-btn"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                <a href="#" class="platform-btn"><i class="fab fa-google-play"></i> Google Podcasts</a>
+    <!-- 2 card Meet the team-->
+
+<section id="meet-team-1141">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Expert Team</span>
+                <h2 class="cs-title">Meet The Team Behind Their Success Story</h2>
             </div>
-            <p>Or subscribe to our newsletter for updates</p>
-            <form name="emailsubscriptions" method="POST" netlify class="newsletter">
-                <input type="email" name="emailadd" placeholder="Your email address">
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
+            <a href="" class="cs-button-solid">View All Members</a>
         </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><i class="fas fa-envelope"></i> email@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Aesthetic Expert</span>
                 </div>
-                <form nmethod="POST" name="contact-form" netlify class="contact-form">
-                    <input type="text" name="fullName" placeholder="Your Name">
-                    <input type="email" name="emailadd" placeholder="Your Email">
-                    <textarea name="message" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send Us a Message</button>
-                </form>
-              
-            </div>
-        </div>
-    </section>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Aesthetic Expert</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--end 2 card -->
+
 
     <footer>
         <div class="container">
