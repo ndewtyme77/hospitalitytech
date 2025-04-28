@@ -51,7 +51,24 @@
             </div>
         </div>
     </section>
-
+<!-- CTA section-->
+    <section class="cta">
+        <div class="container">
+            <h2>Never Miss An Episode</h2>
+            <p>Subscribe to our podcast on your favorite platform</p>
+            <div class="platforms">
+                <a href="#" class="platform-btn"><i class="fab fa-spotify"></i> Spotify</a>
+                <a href="#" class="platform-btn"><i class="fab fa-apple"></i> Apple Podcasts</a>
+                <a href="#" class="platform-btn"><i class="fab fa-google-play"></i> Google Podcasts</a>
+            </div>
+            <p>Or subscribe to our newsletter for updates</p>
+            <form name="subscription" netlify class="newsletter" >
+                <input type="email" name="emailaddress" placeholder="Your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+<!-- End CTA section-->
     <section id="episodes" class="episodes">
         <div class="container">
             <h2>Recent Episodes</h2>
@@ -144,6 +161,34 @@
     </div>
 </section>
 <!--end 2 card -->
+
+    <!-- contact us-->
+       <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> email@podcastname.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form name="contact-form" netlify class="contact-form">
+                    <input type="text" name="fullName" placeholder="Your Name" required>
+                    <input type="email" name="emailaddress" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+           <script src="scripts/Submit.js"></script>
+    </section>
+    <!-- end contact us-->
 
 
     <footer>
