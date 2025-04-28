@@ -8,6 +8,23 @@
     --text-color: Black;
     --text-light: #ebdd5c;
     --text-menu: white;
+    /*2-card*/
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    /*2 card end*/
+
 }
 
 /*2 card start*/
@@ -21,7 +38,7 @@ body {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
-.cs-topper {
+/*.cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -31,7 +48,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 0.25rem;
     display: block;
-}
+}*/
 
 .cs-title {
     font-size: auto;
@@ -601,11 +618,11 @@ footer {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #meet-team-1141 {
+    #host {
         padding: var(--sectionPadding);
         overflow: hidden;
     }
-    #meet-team-1141 .cs-container {
+    #host .cs-container {
         width: 100%;
         /* changes to 1280px at desktop */
         max-width: 34.375rem;
@@ -616,7 +633,7 @@ footer {
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #meet-team-1141 .cs-content {
+    #host .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -626,7 +643,7 @@ footer {
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
     }
-    #meet-team-1141 .cs-topper {
+    #host .cs-topper {
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         text-transform: uppercase;
@@ -637,7 +654,7 @@ footer {
         margin-bottom: 0.25rem;
         display: block;
     }
-    #meet-team-1141 .cs-title {
+    #host .cs-title {
         font-size: var(--headerFontSize);
         font-weight: 900;
         line-height: 1.2em;
@@ -647,10 +664,10 @@ footer {
         color: var(--headerColor);
         position: relative;
     }
-    #meet-team-1141 .cs-title {
+    #host .cs-title {
         max-width: 20ch;
     }
-    #meet-team-1141 .cs-button-solid {
+    #host .cs-button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -669,7 +686,7 @@ footer {
         /* prevents padding from adding to the width */
         box-sizing: border-box;
     }
-    #meet-team-1141 .cs-button-solid:before {
+    #host .cs-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -682,14 +699,14 @@ footer {
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #meet-team-1141 .cs-button-solid:hover:before {
+    #host .cs-button-solid:hover:before {
         width: 100%;
     }
-    #meet-team-1141 .cs-button-solid {
+    #host .cs-button-solid {
         /* prevents flexbox from squishing it */
         flex: none;
     }
-    #meet-team-1141 .cs-card-group {
+    #host .cs-card-group {
         width: 100%;
         max-width: 39.375rem;
         margin: 0;
@@ -701,7 +718,7 @@ footer {
         gap: clamp(1rem, 2.3vw, 1.25rem);
         position: relative;
     }
-    #meet-team-1141 .cs-item {
+    #host .cs-item {
         list-style: none;
         width: 100%;
         display: flex;
@@ -710,23 +727,23 @@ footer {
         align-items: center;
         position: relative;
     }
-    #meet-team-1141 .cs-item:hover .cs-picture:before,
-    #meet-team-1141 .cs-item:hover .cs-picture:after {
+    #host .cs-item:hover .cs-picture:before,
+    #host .cs-item:hover .cs-picture:after {
         opacity: 1;
     }
-    #meet-team-1141 .cs-item:hover .cs-picture img {
+    #host .cs-item:hover .cs-picture img {
         transform: scale(1.1);
     }
-    #meet-team-1141 .cs-item:hover .cs-info {
+    #host .cs-item:hover .cs-info {
         background-color: var(--primary);
     }
-    #meet-team-1141 .cs-item:hover .cs-name {
+    #host .cs-item:hover .cs-name {
         color: var(--secondary);
     }
-    #meet-team-1141 .cs-item:hover .cs-job {
+    #host .cs-item:hover .cs-job {
         color: var(--bodyTextColorWhite);
     }
-    #meet-team-1141 .cs-picture {
+    #host .cs-picture {
         width: 100%;
         height: auto;
         margin: 0 0 0.5rem 0;
@@ -740,7 +757,7 @@ footer {
         position: relative;
         z-index: 1;
     }
-    #meet-team-1141 .cs-picture img {
+    #host .cs-picture img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -752,7 +769,7 @@ footer {
         z-index: -1;
         transition: transform 0.7s;
     }
-    #meet-team-1141 .cs-info {
+    #host .cs-info {
         width: 90%;
         margin: -2.625rem 0 0;
         padding: 1rem;
@@ -767,7 +784,7 @@ footer {
         z-index: 10;
         transition: background-color 0.3s;
     }
-    #meet-team-1141 .cs-name {
+    #host .cs-name {
         font-size: 1.25rem;
         line-height: 1.2em;
         font-weight: 700;
@@ -776,7 +793,7 @@ footer {
         display: block;
         transition: color 0.3s;
     }
-    #meet-team-1141 .cs-job {
+    #host .cs-job {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
@@ -788,15 +805,15 @@ footer {
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-    #meet-team-1141 .cs-card-group {
+    #host .cs-card-group {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
     }
-    #meet-team-1141 .cs-item {
+    #host .cs-item {
         width: 100%;
     }
-    #meet-team-1141 .cs-picture {
+    #host .cs-picture {
         height: 25.4375rem;
         /* remove the aspect ratio so the height can be squished */
         aspect-ratio: initial;
@@ -804,22 +821,22 @@ footer {
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 56.25rem) {
-    #meet-team-1141 .cs-container {
+    #host .cs-container {
         max-width: 80rem;
         flex-direction: row;
         justify-content: space-between;
     }
-    #meet-team-1141 .cs-content {
+    #host .cs-content {
         text-align: left;
         width: 55%;
         flex-direction: column;
         align-items: flex-start;
     }
-    #meet-team-1141 .cs-card-group {
+    #host .cs-card-group {
         justify-content: center;
         flex-wrap: nowrap;
     }
-    #meet-team-1141 .cs-item {
+    #host .cs-item {
         width: 100%;
     }
 }
