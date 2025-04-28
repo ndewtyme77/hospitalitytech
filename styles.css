@@ -860,6 +860,10 @@ footer {
     position: fixed;
     z-index: 10000;
   }
+
+    #nav-button{
+        background-color: var(--primary-color);
+    }
   #navigation:before {
     content: "";
     width: 100%;
