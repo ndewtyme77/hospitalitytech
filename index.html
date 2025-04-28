@@ -63,7 +63,7 @@
             </div>
             <p>Or subscribe to our newsletter for updates</p>
             <form class="newsletter" name="subscription" method="POST" netlify >
-                <input type="email" name="emailaddress" placeholder="Your email address">
+                <input type="email" name="emailaddress" placeholder="Your email address"/>
                 <button type="submit" class="btn">Subscribe</button>
             </form>
         </div>
@@ -180,8 +180,8 @@
                     </div>
                 </div>
                 <form  class="contact-form" name="contact-forms" method="POST" netlify>
-                    <input type="text" name="fullName" placeholder="Your Name" required>
-                    <input type="email" name="emailaddress" placeholder="Your Email" required>
+                    <input type="text" name="fullName" placeholder="Your Name" required/>
+                    <input type="email" name="emailaddress" placeholder="Your Email" required/>
                     <textarea name="message" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -209,10 +209,12 @@
                 </div>
                 <div class="footer-subscribe">
                     <h4>Subscribe</h4>
-                    <form>
+                    <form class="newsletter" name="subscription" method="POST" netlify >
+                        <input type="email" name="emailaddress" placeholder="Your email address"/> </form>
+                    <!--<form>
                         <input type="email" placeholder="Your email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
             <div class="copyright">
