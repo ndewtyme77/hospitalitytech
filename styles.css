@@ -1095,9 +1095,10 @@ footer {
     box-sizing: border-box;
     padding: 0 1rem;
     background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 10px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 25px 8px 24px;
     position: fixed;
     z-index: 10000;
+    border-radius: 25px;
   }
   #navigation .container {
     width: 100%;
