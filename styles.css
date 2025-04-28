@@ -9,9 +9,7 @@
     --text-light: #ebdd5c;
     --text-menu: white;
     /*2-card*/
-    --primary: #ff6a3e;
     --primaryLight: #ffba43;
-    --secondary: #ffba43;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -650,7 +648,7 @@ footer {
         text-align: inherit;
         letter-spacing: 0.1em;
         font-weight: 700;
-        color: var(--primary);
+        color: var(--primary-color);
         margin-bottom: 0.25rem;
         display: block;
     }
@@ -678,7 +676,7 @@ footer {
         color: #fff;
         min-width: 9.375rem;
         padding: 0 1.5rem;
-        background-color: var(--primary);
+        background-color: var(--primary-color);
         border-radius: 0.25rem;
         display: inline-block;
         position: relative;
@@ -735,10 +733,10 @@ footer {
         transform: scale(1.1);
     }
     #host .cs-item:hover .cs-info {
-        background-color: var(--primary);
+        background-color: var(--primary-color);
     }
     #host .cs-item:hover .cs-name {
-        color: var(--secondary);
+        color: var(--secondary-color);
     }
     #host .cs-item:hover .cs-job {
         color: var(--bodyTextColorWhite);
