@@ -62,13 +62,14 @@
                 <a href="#" class="platform-btn"><i class="fab fa-google-play"></i> Google Podcasts</a>
             </div>
             <p>Or subscribe to our newsletter for updates</p>
-            <form name="subscription" netlify class="newsletter" >
+            <form class="newsletter" name="subscription" method="POST" netlify >
                 <input type="email" name="emailaddress" placeholder="Your email address">
                 <button type="submit" class="btn">Subscribe</button>
             </form>
         </div>
     </section>
 <!-- End CTA section-->
+
     <section id="episodes" class="episodes">
         <div class="container">
             <h2>Recent Episodes</h2>
@@ -178,7 +179,7 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <form name="contact-form" class="contact-form" netlify>
+                <form  class="contact-form" name="contact-form" method="POST" netlify>
                     <input type="text" name="fullName" placeholder="Your Name" required>
                     <input type="email" name="emailaddress" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message"></textarea>
@@ -186,7 +187,6 @@
                 </form>
             </div>
         </div>
-           <script src="scripts/Submit.js"></script>
     </section>
     <!-- end contact us-->
 
