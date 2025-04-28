@@ -980,7 +980,8 @@ footer {
     width: 100%;
     height: auto;
     padding-bottom: 2.4em;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: var(--primary-color);
     box-shadow: inset rgba(0, 0, 0, 0.2) 10px 8px 24px;
     opacity: 0;
     position: absolute;
