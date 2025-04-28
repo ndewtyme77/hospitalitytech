@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospitality Tech Show | Where Hospitality and Tech Meet</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hospitality Tech Show | Where Hospitality and Tech Meet</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    </head>
+    <body>
+        <!--    <header>
+         navibar
         <div class="containerlogo">
             <div class="logo">
                 <img src=  "IMG/logo.jpg" height="100">
@@ -22,207 +23,264 @@
                     <li><a href="#contact"><i class=" fa fa-phone fa-fw"></i>&nbsp;Contact</a></li>
                 </ul>
             </nav>
+                    end navbar
             <div class="subscribe">
                 <a href="#cta" class="btn">Subscribe</a>
             </div>
         </div>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Latest Episode</h2>
-                <h3>Episode Title</h3>
-                <p>Brief description of the latest episode goes here.</p>
-                <div class="player">
-                   <audio controls>
-                        <source src="episode.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="IMG/flyer/podcastposter.png" alt="Podcast Cover Art">
-            </div>
-        </div>
-    </section>
-<!-- CTA section-->
-    <section class="cta">
-        <div class="container">
-            <h2>Never Miss An Episode</h2>
-            <p>Subscribe to our podcast on your favorite platform</p>
-            <div class="platforms">
-                <a href="#" class="platform-btn"><i class="fab fa-spotify"></i> Spotify</a>
-                <a href="#" class="platform-btn"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                <a href="#" class="platform-btn"><i class="fab fa-google-play"></i> Google Podcasts</a>
-            </div>
-            <p>Or subscribe to our newsletter for updates</p>
-            <form class="newsletter" name="subscription" method="POST" netlify >
-                <input type="email" name="emailaddress" placeholder="Your email address"/>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-        </div>
-    </section>
-<!-- End CTA section-->
-
-    <section id="episodes" class="episodes">
-        <div class="container">
-            <h2>Recent Episodes</h2>
-            <div class="episode-grid">
-                <!-- Episode 1 -->
-                <div class="episode-card">
-                    <img src="IMG/flyer/323/guestflyer323.png" alt="Episode 1" width="400px" height="200px" >
-                    <div class="episode-info">
-                        <h3>Episode 1: Title</h3>
-                        <p class="date">January 1, 2023</p>
-                        <p class="description">Short description of the episode content...</p>
-                        <a href="#" class="btn">Listen Now</a>
+-->
+        <!-- NewNav-->
+        <header id="navigation">
+            <div class="container">
+                <!--Nav Logo-->
+                <a href="" class="logo" aria-label="back to home">
+                    <img src="IMG/logo.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async" />
+                </a>
+                <!--Navigation List-->
+                <nav class="nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="toggle" aria-label="mobile menu toggle">
+                        <span id="menubtn" class="box" aria-hidden="true">
+                            <span class="line line1" aria-hidden="true"></span>
+                            <span class="line line2" aria-hidden="true"></span>
+                            <span class="line line3" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="ul-wrapper">
+                        <ul id="expanded" class="cs-ul" aria-expanded="false">
+                            <li class="li">
+                                <a href="#home"><i class="fa fa-house fa-fw"></i>&nbsp;Home</a>
+                            </li>
+                            <li class="li">
+                                <a href="#episodes"><i class="fa fa-television fa-fw"></i>&nbsp;Episodes</a>
+                            </li>
+                            <li class="li">
+                                <a href="#about"><i class="fa fa-book fa-fww"></i>&nbsp;About</a>
+                            </li>
+                            <li class="li">
+                                <a href="#contact"><i class="fa fa-phone fa-fw"></i>&nbsp;Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
+                <a href="" class="button-solid nav-button">Contact Us</a>
+            </div>
+            <!-- end NewNav -->
+        </header>
 
-                <!-- Episode 2 -->
-                <div class="episode-card">
-                    <img src="IMG/flyer/406/guestflyer406.png" alt="Episode 2">
-                    <div class="episode-info">
-                        <h3>Episode 2: Title</h3>
-                        <p class="date">December 15, 2022</p>
-                        <p class="description">Short description of the episode content...</p>
-                        <a href="#" class="btn">Listen Now</a>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Latest Episode</h2>
+                    <h3>Episode Title</h3>
+                    <p>Brief description of the latest episode goes here.</p>
+                    <div class="player">
+                        <audio controls>
+                            <source src="episode.mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
-                </div>
-
-                <!-- Episode 3 -->
-                <div class="episode-card">
-                    <img src="IMG/flyer/427/guestflyer427.png" alt="Episode 3">
-                    <div class="episode-info">
-                        <h3>Episode 3: Title</h3>
-                        <p class="date">December 1, 2022</p>
-                        <p class="description">Short description of the episode content...</p>
-                        <a href="#" class="btn">Watch Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="view-all">
-                <a href="#" class="btn">View All Episodes</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="hero-content">
-            <h2>About The Podcast</h2>
-            <p>Welcome to HT, where we technology and hospitality. Each episode we are live with todaus leaders.</p>
-            <p>Our mission is to merge the two worlds. Whether you're everyone in hos[itality invovled in tech industry you'll find a community.</p>
-        </div>
-    </section>
-
-    <!-- 2 card Meet the team-->
-
-<section id="host">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <h2 class="cs-title">Meet The Hosts</h2>
-            </div>
-
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="IMG/staff/Picture.JPG"/>
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="IMG/staff/Picture.JPG">
-                    <img loading="lazy" decoding="async" src="IMG/staff/Picture.JPG" alt="person" width="305" height="407">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Sanen Goundjo</span>
-                    <span class="cs-job">Host</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png">
-                    <img loading="lazy" decoding="async" src="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png" alt="person" width="305" height="407">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Mike Woodson</span>
-                    <span class="cs-job">Co-Host</span>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-<!--end 2 card -->
-
-    <!-- contact us-->
-       <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><i class="fas fa-envelope"></i> email@podcastname.com</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-                <form  class="contact-form" name="contact-forms" method="POST" netlify>
-                    <input type="text" name="Name" placeholder="Your Name"/>
-                    <input type="email" name="emailadd" placeholder="Your Email"/>
-                    <textarea name="message" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                <div class="hero-image">
+                    <img src="IMG/flyer/podcastposter.png" alt="Podcast Cover Art" />
+                </div>
+            </div>
+        </section>
+        <!-- CTA section-->
+        <section class="cta">
+            <div class="container">
+                <h2>Never Miss An Episode</h2>
+                <p>Subscribe to our podcast on your favorite platform</p>
+                <div class="platforms">
+                    <a href="#" class="platform-btn"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="#" class="platform-btn"><i class="fab fa-apple"></i> Apple Podcasts</a>
+                    <a href="#" class="platform-btn"><i class="fab fa-google-play"></i> Google Podcasts</a>
+                </div>
+                <p>Or subscribe to our newsletter for updates</p>
+                <form class="newsletter" name="subscription" method="POST" netlify>
+                    <input type="email" name="emailaddress" placeholder="Your email address" />
+                    <button type="submit" class="btn">Subscribe</button>
                 </form>
             </div>
-        </div>
-    </section>
-    <!-- end contact us-->
+        </section>
+        <!-- End CTA section-->
 
+        <section id="episodes" class="episodes">
+            <div class="container">
+                <h2>Recent Episodes</h2>
+                <div class="episode-grid">
+                    <!-- Episode 1 -->
+                    <div class="episode-card">
+                        <img src="IMG/flyer/323/guestflyer323.png" alt="Episode 1" width="400px" height="200px" />
+                        <div class="episode-info">
+                            <h3>Episode 1: Title</h3>
+                            <p class="date">January 1, 2023</p>
+                            <p class="description">Short description of the episode content...</p>
+                            <a href="#" class="btn">Listen Now</a>
+                        </div>
+                    </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Podcast<span>Name</span></h3>
-                    <p>Your catchy tagline here</p>
+                    <!-- Episode 2 -->
+                    <div class="episode-card">
+                        <img src="IMG/flyer/406/guestflyer406.png" alt="Episode 2" />
+                        <div class="episode-info">
+                            <h3>Episode 2: Title</h3>
+                            <p class="date">December 15, 2022</p>
+                            <p class="description">Short description of the episode content...</p>
+                            <a href="#" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Episode 3 -->
+                    <div class="episode-card">
+                        <img src="IMG/flyer/427/guestflyer427.png" alt="Episode 3" />
+                        <div class="episode-info">
+                            <h3>Episode 3: Title</h3>
+                            <p class="date">December 1, 2022</p>
+                            <p class="description">Short description of the episode content...</p>
+                            <a href="#" class="btn">Watch Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#episodes">Episodes</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="view-all">
+                    <a href="#" class="btn">View All Episodes</a>
                 </div>
-                <div class="footer-subscribe">
-                    <h4>Subscribe</h4>
-                    <form class="newsletter" name="subscription" method="POST" netlify >
-                        <input type="email" name="emailaddress" placeholder="Your email address"/>
-                        <button type="submit"><i class= "fas fa-paper-plane"></i></button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="hero-content">
+                <h2>About The Podcast</h2>
+                <p>Welcome to HT, where we technology and hospitality. Each episode we are live with todaus leaders.</p>
+                <p>
+                    Our mission is to merge the two worlds. Whether you're everyone in hos[itality invovled in tech
+                    industry you'll find a community.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2 card Meet the team-->
+
+        <section id="host">
+            <div class="container">
+                <div class="content">
+                    <div class="flex">
+                        <h2 class="title">Meet The Hosts</h2>
+                    </div>
+                </div>
+                <ul class="card-group">
+                    <li class="item">
+                        <picture class="picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="IMG/staff/Picture.JPG" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="IMG/staff/Picture.JPG" />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="IMG/staff/Picture.JPG"
+                                alt="person"
+                                width="305"
+                                height="407" />
+                        </picture>
+                        <div class="info">
+                            <span class="name">Sanen Goundjo</span>
+                            <span class="job">Host</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <picture class="picture">
+                            <!--Mobile Image-->
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png" />
+                            <!--Tablet and above Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png" />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="IMG/staff/B9221173-2499-4780-9423-00E5BF9D03FB.png"
+                                alt="person"
+                                width="305"
+                                height="407" />
+                        </picture>
+                        <div class="info">
+                            <span class="name">Mike Woodson</span>
+                            <span class="job">Co-Host</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--end 2 card -->
+
+        <!-- contact us-->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> email@podcastname.com</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" name="contact-forms" method="POST" netlify>
+                        <input type="text" name="Name" placeholder="Your Name" />
+                        <input type="email" name="emailadd" placeholder="Your Email" />
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
-                    <!--<form>
+                </div>
+            </div>
+        </section>
+        <!-- end contact us-->
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h3>Podcast<span>Name</span></h3>
+                        <p>Your catchy tagline here</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#episodes">Episodes</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h4>Subscribe</h4>
+                        <form class="newsletter" name="subscription" method="POST" netlify>
+                            <input type="email" name="emailaddress" placeholder="Your email address" />
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <!--<form>
                         <input type="email" placeholder="Your email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form> -->
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Hospital Tech SHow. All rights reserved. Designed by Professional Digi, LLC</p>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Hospital Tech SHow. All rights reserved. Designed by Professional Digi, LLC</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

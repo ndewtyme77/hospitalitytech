@@ -36,7 +36,7 @@ body {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
-/*.cs-topper {
+/*.topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ body {
     display: block;
 }*/
 
-.cs-title {
+.title {
     font-size: auto;
     font-weight: 900;
     line-height: 1.2em;
@@ -59,7 +59,7 @@ body {
     position: relative;
 }
 
-.cs-text {
+.text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: inherit;
@@ -93,10 +93,13 @@ body {
     width: 90%;
     max-width: auto;
     margin: 0 auto;
-    --padding: 0 20px;
+   /* --padding: 0 20px;*/
     --background-color: var(--primary-color);
     --padding-right: 100px;
     --padding-left: 100px;
+    position: fixed;
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }
 
 .btn {
@@ -621,7 +624,7 @@ footer {
         overflow: hidden;
         background-color: var(--accent-color);
     }
-    #host .cs-container {
+    #host .container {
         width: 100%;
         /* changes to 1280px at desktop */
         max-width: 34.375rem;
@@ -632,7 +635,7 @@ footer {
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #host .cs-content {
+    #host .content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -642,7 +645,7 @@ footer {
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
     }
-    #host .cs-topper {
+    #host .topper {
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         text-transform: uppercase;
@@ -653,7 +656,7 @@ footer {
         margin-bottom: 0.25rem;
         display: block;
     }
-    #host .cs-title {
+    #host .title {
         font-size: var(--headerFontSize);
         font-weight: 900;
         line-height: 1.2em;
@@ -663,10 +666,10 @@ footer {
         color: var(--headerColor);
         position: relative;
     }
-    #host .cs-title {
+    #host .title {
         max-width: 20ch;
     }
-    #host .cs-button-solid {
+    #host .button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -685,7 +688,7 @@ footer {
         /* prevents padding from adding to the width */
         box-sizing: border-box;
     }
-    #host .cs-button-solid:before {
+    #host .button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -698,14 +701,14 @@ footer {
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #host .cs-button-solid:hover:before {
+    #host .button-solid:hover:before {
         width: 100%;
     }
-    #host .cs-button-solid {
+    #host .button-solid {
         /* prevents flexbox from squishing it */
         flex: none;
     }
-    #host .cs-card-group {
+    #host .card-group {
         width: 100%;
         max-width: 39.375rem;
         margin: 0;
@@ -717,7 +720,7 @@ footer {
         gap: clamp(1rem, 2.3vw, 1.25rem);
         position: relative;
     }
-    #host .cs-item {
+    #host .item {
         list-style: none;
         width: 100%;
         display: flex;
@@ -726,23 +729,23 @@ footer {
         align-items: center;
         position: relative;
     }
-    #host .cs-item:hover .cs-picture:before,
-    #host .cs-item:hover .cs-picture:after {
+    #host .item:hover .picture:before,
+    #host .item:hover .picture:after {
         opacity: 1;
     }
-    #host .cs-item:hover .cs-picture img {
+    #host .item:hover .picture img {
         transform: scale(1.1);
     }
-    #host .cs-item:hover .cs-info {
+    #host .item:hover .info {
         background-color: var(--primary-color);
     }
-    #host .cs-item:hover .cs-name {
+    #host .item:hover .name {
         color: var(--secondary-color);
     }
-    #host .cs-item:hover .cs-job {
+    #host .item:hover .job {
         color: var(--bodyTextColorWhite);
     }
-    #host .cs-picture {
+    #host .picture {
         width: 100%;
         height: auto;
         margin: 0 0 0.5rem 0;
@@ -756,7 +759,7 @@ footer {
         position: relative;
         z-index: 1;
     }
-    #host .cs-picture img {
+    #host .picture img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -768,7 +771,7 @@ footer {
         z-index: -1;
         transition: transform 0.7s;
     }
-    #host .cs-info {
+    #host .info {
         width: 90%;
         margin: -2.625rem 0 0;
         padding: 1rem;
@@ -783,7 +786,7 @@ footer {
         z-index: 10;
         transition: background-color 0.3s;
     }
-    #host .cs-name {
+    #host .name {
         font-size: 1.25rem;
         line-height: 1.2em;
         font-weight: 700;
@@ -792,7 +795,7 @@ footer {
         display: block;
         transition: color 0.3s;
     }
-    #host .cs-job {
+    #host .job {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
@@ -804,15 +807,15 @@ footer {
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-    #host .cs-card-group {
+    #host .card-group {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
     }
-    #host .cs-item {
+    #host .item {
         width: 100%;
     }
-    #host .cs-picture {
+    #host .picture {
         height: 25.4375rem;
         /* remove the aspect ratio so the height can be squished */
         aspect-ratio: initial;
@@ -820,22 +823,389 @@ footer {
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 56.25rem) {
-    #host .cs-container {
+    #host .container {
         max-width: 80rem;
         flex-direction: row;
         justify-content: space-between;
     }
-    #host .cs-content {
+    #host .content {
         text-align: left;
         width: 55%;
         flex-direction: column;
         align-items: flex-start;
     }
-    #host .cs-card-group {
+    #host .card-group {
         justify-content: center;
         flex-wrap: nowrap;
     }
-    #host .cs-item {
+    #host .item {
         width: 100%;
     }
+}
+/*-- -------------------------- -->
+<---     Mobile Navigation      -->
+<--- -------------------------- -*/
+/* Mobile - 1023px */
+@media only screen and (max-width: 63.9375rem) {
+  body.open {
+    overflow: hidden;
+  }
+  #navigation {
+    width: 100%;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 10px 8px 24px;
+    position: fixed;
+    z-index: 10000;
+  }
+  #navigation:before {
+    content: "";
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: -1100;
+    transition: height 0.5s, opacity 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  #navigation.active:before {
+    height: 150vh;
+    opacity: 1;
+  }
+  #navigation.active .ul-wrapper {
+    opacity: 1;
+    transform: scaleY(1);
+    transition-delay: 0.15s;
+  }
+  #navigation.active .li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #navigation .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #navigation .logo {
+    width: 40%;
+    max-width: 9.125rem;
+    height: 100%;
+    margin: 0 auto 0 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  #navigation .logo img {
+    width: 100%;
+    height: 100%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
+  }
+  #navigation .toggle {
+    /* 44px - 48px */
+    width: clamp(2.75rem, 6vw, 3rem);
+    height: clamp(2.75rem, 6vw, 3rem);
+    margin: 0 0 0 auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #navigation .active .line1 {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(225deg);
+  }
+  #navigation .active .line2 {
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
+    transform-origin: center;
+  }
+  #navigation .active .line3 {
+    opacity: 0;
+    bottom: 100%;
+  }
+  #navigation .box {
+    /* 24px - 28px */
+    width: clamp(1.5rem, 2vw, 1.75rem);
+    /* 14px - 16px */
+    height: clamp(0.875rem, 1.5vw, 1rem);
+    position: relative;
+  }
+  #navigation .line {
+    width: 100%;
+    height: 2px;
+    background-color: #1a1a1a;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navigation .line1 {
+    top: 0;
+    transition: transform 0.5s, top 0.3s, left 0.3s;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+  }
+  #navigation .line2 {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: top 0.3s, left 0.3s, transform 0.5s;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #navigation .line3 {
+    bottom: 0;
+    transition: bottom 0.3s, opacity 0.3s;
+  }
+  #navigation .ul-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2.4em;
+    background-color: #fff;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 10px 8px 24px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    transform: scaleY(0);
+    transition: transform 0.4s, opacity 0.3s;
+    transform-origin: top;
+  }
+  #navigation .ul {
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    margin: 0;
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    overflow: scroll;
+  }
+  #navigation .li {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    margin-right: 0;
+    opacity: 0;
+    /* transition from these values */
+    transform: translateY(-4.375rem);
+    transition: transform 0.6s, opacity 0.9s;
+  }
+  #navigation .li:nth-of-type(1) {
+    transition-delay: 0.05s;
+  }
+  #navigation .li:nth-of-type(2) {
+    transition-delay: 0.1s;
+  }
+  #navigation .li:nth-of-type(3) {
+    transition-delay: 0.15s;
+  }
+  #navigation .li:nth-of-type(4) {
+    transition-delay: 0.2s;
+  }
+  #navigation .li:nth-of-type(5) {
+    transition-delay: 0.25s;
+  }
+  #navigation .li:nth-of-type(6) {
+    transition-delay: 0.3s;
+  }
+  #navigation .li:nth-of-type(7) {
+    transition-delay: 0.35s;
+  }
+  #navigation .li:nth-of-type(8) {
+    transition-delay: 0.4s;
+  }
+  #navigation .li:nth-of-type(9) {
+    transition-delay: 0.45s;
+  }
+  #navigation .li:nth-of-type(10) {
+    transition-delay: 0.5s;
+  }
+  #navigation .li:nth-of-type(11) {
+    transition-delay: 0.55s;
+  }
+  #navigation .li:nth-of-type(12) {
+    transition-delay: 0.6s;
+  }
+  #navigation .li:nth-of-type(13) {
+    transition-delay: 0.65s;
+  }
+  #navigation .li-link {
+    /* 16px - 24px */
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.2em;
+    text-decoration: none;
+    margin: 0;
+    color: var(--headerColor);
+    display: inline-block;
+    position: relative;
+  }
+  #navigation .li-link:before {
+    /* active state underline */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 1;
+    display: none;
+    position: absolute;
+    bottom: -0.125rem;
+    left: 0;
+  }
+  #navigation .li-link.active:before {
+    display: block;
+  }
+  #navigation .button-solid {
+    display: none;
+  }
+}
+/*-- -------------------------- -->
+<---     Desktop Navigation     -->
+<--- -------------------------- -*/
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #navigation {
+    width: 100%;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 10px 8px 24px;
+    position: fixed;
+    z-index: 10000;
+  }
+  #navigation .container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #navigation toggle {
+    display: none;
+  }
+  #navigation .logo {
+    width: 18.4%;
+    max-width: 21.875rem;
+    height: 4.0625rem;
+    /* margin-right auto pushes everything away from it to the right */
+    margin: 0 auto 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  #navigation .logo img {
+    width: 100%;
+    height: 100%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
+  }
+  #navigation .ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* 20px - 36px */
+    gap: clamp(1.25rem, 2.6vw, 2.25rem);
+  }
+  #navigation .li {
+    list-style: none;
+    padding: 2rem 0;
+    /* prevent flexbox from squishing it */
+    flex: none;
+  }
+  #navigation -li-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+    position: relative;
+  }
+  #navigation .li-link:hover:before {
+    width: 100%;
+  }
+  #navigation .li-link.active:before {
+    width: 100%;
+  }
+  #navigation .li-link:before {
+    /* active state underline */
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--primary);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    bottom: 10rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #navigation .button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #navigation .button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #navigation .button-solid:hover:before {
+    width: 100%;
+  }
 }
