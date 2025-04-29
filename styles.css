@@ -1098,7 +1098,7 @@ footer {
     box-sizing: border-box;
     padding: 0 1rem;
     background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 25px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.4) 25px 8px 24px;
     position: fixed;
     z-index: 10000;
     border-radius: 25px;
@@ -1155,7 +1155,7 @@ footer {
     line-height: 1.5em;
     text-decoration: none;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: var(--text-color);
     display: block;
     position: relative;
   }
@@ -1170,7 +1170,7 @@ footer {
     content: "";
     width: 0%;
     height: 2px;
-    background: var(--primary);
+    background: var(--primary-color);
     opacity: 1;
     display: block;
     position: absolute;
@@ -1191,7 +1191,7 @@ footer {
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #fff;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;

@@ -1,7 +1,7 @@
 // add classes for mobile navigation toggling
 var body = document.querySelector('body');
 const navbarMenu = document.querySelector('#navigation');
-const hamburgerMenu = document.querySelector('#navigation .cs-toggle');
+const hamburgerMenu = document.querySelector('#navigation .toggle');
 
 hamburgerMenu.addEventListener('click', function () {
 	hamburgerMenu.classList.toggle('active');
