@@ -143,7 +143,7 @@ header .containerlogo {
     --padding: 15px 0;
     padding: 20px;
 }
-
+/*
 .logo h1 {
     font-size: 1.8rem;
     color: var(--dark-color);
@@ -177,7 +177,7 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--secondary-color);
 }
-
+*/
 /* Hero Section */
 .hero {
     padding: 150px 0 80px;
@@ -855,19 +855,18 @@ footer {
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem 1rem;
-    background-color: #fff;
+   /* background-color: #fff;*/
+    background-color: var(--primary-color);
     box-shadow: rgba(149, 157, 165, 0.2) 10px 8px 24px;
     position: fixed;
     z-index: 10000;
   }
 
-    #nav-button{
-        background-color: var(--primary-color);
-    }
+
   #navigation:before {
     content: "";
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     display: block;
@@ -899,7 +898,7 @@ footer {
     align-items: center;
   }
   #navigation .logo {
-    width: 40%;
+    width: 60%;
     max-width: 9.125rem;
     height: 100%;
     margin: 0 auto 0 0;
