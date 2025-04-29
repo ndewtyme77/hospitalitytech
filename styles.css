@@ -93,7 +93,7 @@ body {
     width: 100%;
     max-width: auto;
     margin: 0 auto;
-   /* --padding: 0 20px;*/
+    --padding: 0 20px;
     --background-color: var(--primary-color);
     --padding-right: 100px;
     --padding-left: 100px;
